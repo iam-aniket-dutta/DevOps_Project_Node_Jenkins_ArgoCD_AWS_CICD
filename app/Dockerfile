@@ -15,6 +15,7 @@ RUN npm ci
 FROM node:22-alpine AS deploy
 
 ENV PORT=3000
+ENV NODE_ENV=Development
 
 WORKDIR /app
 

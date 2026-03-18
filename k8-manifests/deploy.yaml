@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: aniketnitu2026/node-jenkins-argocd:lv3
+          image: aniketnitu2026/node-jenkins-argocd:dv1
           ports:
             - containerPort: 3000

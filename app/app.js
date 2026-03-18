@@ -22,6 +22,8 @@ app.get('/', (req, res) => {
 
 app.get('/health', (req, res) => res.status(200).json({ status: 'server running' }));
 
+app.get('/check-env', (req, res) => res.status(200).json({ env: process.env.NODE_ENV || 'Local' }));
+
 app.listen(PORT, () => {
     console.log(`✅ Portfolio running at http://localhost:${PORT}`);
 });
